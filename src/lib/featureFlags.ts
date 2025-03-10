@@ -23,6 +23,8 @@ export const FEATURE_FLAGS = {
     { percentageOfUsers: 0.25, userRoles: ['user'] },
     { userRoles: ['admin', 'tester'] },
   ],
+  // below means 50% of the user will get this feature
+  // MULTIPLE_ALLOWANCES: [{ percentageOfUsers: 0.5 }],
 } as const satisfies Record<string, FeatureFlagRule[] | boolean>;
 
 export function canViewFeature(featureName: FeatureFlagName, user: User) {
