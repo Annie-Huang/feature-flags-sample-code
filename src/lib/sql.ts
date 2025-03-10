@@ -9,5 +9,5 @@ export function sql() {
     select: (cols: string) => ({
       from: (table: string) => [{ id: 1 }],
     }),
-  }
+  };
 }
