@@ -50,4 +50,6 @@ C:\react\feature-flags-sample-code\src\lib\getUser.ts
 { id: 'e', role: 'user' } as User; --> will always see 3 cards
 because we implemented cache. The cache is done in userIsWithinPercentage in featureFlags.ts
 
-
+C:\react\feature-flags-sample-code\src\db\products.ts
+explains how you want to use feature flag to do "Safer Refactors" explained in the Pros section.
+if the result is different, it will log it and you can use another tool to monitor how many such logs are created in production.
