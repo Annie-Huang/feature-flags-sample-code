@@ -36,6 +36,12 @@ Cons:
 Where to store?
 Location            Implementation  Request Speed   With Cache  Update Speed    Cost    Flexibility
 In code             Easy            Fast            Fast        Slow            Free    High
-Env Vars            Easy            Fast            Fast        Slow            Free    Low
-Database            Hard            Slow            Fast        Fast            Free    High
+Env Vars            Easy            Fast            Fast        Slow            Free    Low (only store true or false)
+Database            Hard (harder)   Slow            Fast        Fast            Free    High
 Saas (paid product) Easy            Slow            Fast        Fast            Paid    High
+
+
+Main file is in
+C:\react\feature-flags-sample-code\src\components\FeatureEnabled.tsx
+C:\react\feature-flags-sample-code\src\lib\featureFlags.ts
+C:\react\feature-flags-sample-code\src\lib\getUser.ts

@@ -5,5 +5,7 @@ export type User = {
 };
 
 export function getUser() {
-  return { id: 'e', role: 'user' } as User;
+  // return { id: 'e', role: 'user' } as User;
+
+  return { id: 'e', role: 'tester' } as User;
 }

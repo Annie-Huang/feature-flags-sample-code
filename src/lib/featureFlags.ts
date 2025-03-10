@@ -17,7 +17,8 @@ export const FEATURE_FLAGS = {
   TEST_NEW_PRODUCTS_QUERY: true,
   ADVANCED_ANALYTICS: true,
   DISABLED_FEATURE: false,
-  EXPERIMENTAL_FEATURE: false,
+  // EXPERIMENTAL_FEATURE: false,
+  EXPERIMENTAL_FEATURE: [{ userRoles: ['admin', 'tester'] }],
   MULTIPLE_ALLOWANCES: [
     { percentageOfUsers: 0.25, userRoles: ['user'] },
     { userRoles: ['admin', 'tester'] },
