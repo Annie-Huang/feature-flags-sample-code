@@ -32,3 +32,10 @@ Cons:
 3. Require Maintenance
 4. New Failure Points
 
+
+Where to store?
+Location            Implementation  Request Speed   With Cache  Update Speed    Cost    Flexibility
+In code             Easy            Fast            Fast        Slow            Free    High
+Env Vars            Easy            Fast            Fast        Slow            Free    Low
+Database            Hard            Slow            Fast        Fast            Free    High
+Saas (paid product) Easy            Slow            Fast        Fast            Paid    High
