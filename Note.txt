@@ -7,3 +7,4 @@ https://github.com/Annie-Huang/feature-flags-sample-code
 Make a copy from web dev simplified repo and create my repo.
 The reason I don't want to do clone is that I will add more notes into this repo.
 
+PS C:\react\feature-flags-sample-code> npm i
