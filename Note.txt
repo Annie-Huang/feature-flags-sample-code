@@ -9,3 +9,26 @@ The reason I don't want to do clone is that I will add more notes into this repo
 
 PS C:\react\feature-flags-sample-code> npm i
 PS C:\react\feature-flags-sample-code> npx prettier . --write
+
+PS C:\react\feature-flags-sample-code> npm run dev
+
+
+Pros:
+1. Kill Switch
+    e.g. e-commerce site where people are able to purchase products. Suddenly a bug is deployed into production and user can purchase product for free.
+    such feature flag will be long running feature flags
+2. Beta Testing
+    want certain users to be able to opt into like a beta version. e.g. admin user or test user for prod
+3. A/B Testing
+    e.g. 30% of user see this specific feature and the other 70% won't see it.
+4. Safer Refactors
+    e.g. you wrote a new sql query to replace the old one but you don't want to entire decommission the old one until you see results are matching and better performance.
+5. Easier Deploys
+    e.g. Things are already in main master branch but it's not ready to deploy, can use a feature flags to wrap it.
+
+Cons:
+1. Increased Complexity
+2. More Code
+3. Require Maintenance
+4. New Failure Points
+
