@@ -59,5 +59,6 @@ function userIsWithinPercentage(
 ) {
   if (allowedPercent == null) return true;
 
+  // murmurhash(`${featureName}-${flagId}`) always return the same value, so for the same user and same feature flag, we will have a consistent result, like a cache.
   return murmurhash(`${featureName}-${flagId}`) / MAX_UINT_32 < allowedPercent;
 }
